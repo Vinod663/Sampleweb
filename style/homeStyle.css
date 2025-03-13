@@ -192,8 +192,8 @@ nav a{
 
 }
 .about-section>div:first-child{
-    /*background: white;
-    width: 580px;*/
+    /* background: white;*/
+    width: 650px;
 }
 
 .about-section>div:nth-child(2){
@@ -442,6 +442,9 @@ nav a{
         margin-left: 0;
         margin-bottom: 50px;
     }
+    .about-section>div:first-child{
+        width:auto;
+    }
 
 }
 
@@ -454,6 +457,9 @@ nav a{
 
     .about-section>div:nth-child(2) {
         margin-left: 120px;
+    }
+    .about-section>div:first-child{
+        width: 750px;
     }
 
 
