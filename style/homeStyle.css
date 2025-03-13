@@ -8,13 +8,12 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-
-
+    overflow-x: hidden;
 }
 
 html {
     cursor: url(../assets/media/arrowPoint.5b3f3b5c07736388f143.svg) 15 15, move;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 body {
     background: #050810;
@@ -33,7 +32,11 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    overflow-x: hidden;
+
+
+}
+.navbar{
+    overflow-y: hidden;
 }
 
 .navbar a{
@@ -43,6 +46,7 @@ body {
     font-weight: bold;
     border-bottom: transparent solid 2px;
     transition: all 0.3s ease;
+
 
 }
 
@@ -67,6 +71,7 @@ nav a{
     /*font-optical-sizing: auto;*/
     font-style: normal;
     color: white;
+    overflow-y: hidden;
 
     cursor: url(../assets/media/arrowPoint.5b3f3b5c07736388f143.svg) 15 15, move;
 }
@@ -180,11 +185,21 @@ nav a{
     left: 60px;
     right: 60px;
     bottom: 10px;
+
+}
+.about-section>div:nth-child(2)>p{
+    overflow-y: hidden;
+
+}
+.about-section>div:first-child{
+    /*background: white;
+    width: 580px;*/
 }
 
 .about-section>div:nth-child(2){
     display: flex;
     justify-content: space-between;
+    width: fit-content;
     text-align: center;
     align-items: center;
     margin-right: 120px;
@@ -200,6 +215,7 @@ nav a{
     font-variation-settings:
             "wdth" 100;
 }
+
 
 .home-img .img-box{
     position: relative;
