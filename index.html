@@ -2,426 +2,642 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Responsive-Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vinod Niloshana - Full-Stack Developer, creating seamless experiences from frontend to backend. Explore my projects and achievements.">
-    <meta name="keywords" content="Vinod Niloshana, Full-Stack Developer, Web Design, UI/UX Design, Software Development, Projects, CV">
-    <meta name="author" content="Vinod Niloshana">
-    <meta property="og:title" content="Vinod Niloshana - Full-Stack Developer">
-    <meta property="og:description" content="Explore the portfolio of Vinod Niloshana, a Full-Stack Developer creating seamless digital experiences with expertise in web design, UI/UX, and software development.">
-    <meta property="og:image" content="assets/gallery/IMG_20240823_201240-removebg.png">
-    <meta property="og:url" content="https://vinodniloshana.vercel.app/">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Vinod Niloshana - Full-Stack Developer">
-    <meta property="og:description" content="Discover the portfolio of Vinod Niloshana, a Full-Stack Developer with expertise in web design, UI/UX, and software development.">
-    <meta property="og:image" content="assets/gallery/IMG_20240823_201240-removebg.png">
-    <meta property="og:url" content="https://www.linkedin.com/in/vinod-niloshana-09678731a">
-    <meta property="og:site_name" content="Vinod Niloshana Portfolio">
-    <meta property="og:locale" content="en_US">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Vinod Niloshana - Developer & Software Engineer">
-    <meta property="og:url" content="https://github.com/Vinod663">
-    <meta property="og:image" content="assets/gallery/IMG_20240823_201240-removebg.png">
-    <meta property="og:description" content="A software engineer focused on solving real-world problems through technology. Explore my portfolio and projects.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Vinod Niloshana</title>
-
-    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="style/homeStyle.css">
     <link rel="stylesheet" href="/assets/lib/normalize.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        }
+        header{
+            background-color: darkslategray;
+            width: 100%;
+            height: 70px;
+            position: relative;
+
+
+        }
+        #logo{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 60px;
+
+
+        }
+
+        #navigation{
+            width: fit-content;
+            height: fit-content;
+            position: absolute; /*absolute position eke child kenekwa position kireemata eyata width ekakui height ekakui deela tiyenna one*/
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #navigation>a{
+            margin-left: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #navigation>a:hover,#navigation>a:active{
+            color:red;
+
+        }
+        #bars{
+            position: absolute;
+            width: fit-content;
+            height: 4vh;
+            right: 60px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            margin-right: 2vw;
+            display: none;
+        }
+
+        .hero{
+            position: relative;
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(2,1fr);
+            /*border: black solid 2px;*/
+            top: 10px;
+
+
+        }
+
+        .hero-left{
+            height: fit-content;
+            width: fit-content;
+            margin-left: 60px;
+            margin-top: 20px;
+            /*top: 10vh;*/
+            /*left: 1vw;
+            margin: auto;*/
+
+        }
+        .hero-left>b:first-child{
+
+            font-size: 47px;
+            color:darkslategray ;
+
+        }
+        .hero-left>h1{
+            position: relative;
+            top: -50px;
+            font-size: 60px;
+            color: darkslategray;
+        }
+        .hero-left>b:nth-child(3){
+            position: relative;
+            top: -100px;
+            font-size: 33px;
+            color: lightseagreen;
+        }
+        .hero-left>p{
+            position: relative;
+            font-weight: bold;
+            bottom: 100px;
+            font-size: 20px;
+            color: cadetblue;
+        }
+        .hero-left>button{
+            position: relative;
+            bottom: 80px;
+            width: 150px;
+            height: 50px;
+            background-color: darkslategray;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hero-right{
+            height: fit-content;
+            width: fit-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+            /*margin-right: 20px*/
+            /*top: 10vh;*/
+            /*right: 1vw;
+            margin: auto;*/
+        }
+        .hero-right>img{
+            /*width: 500px;
+            height: auto;
+            position: relative;
+            left: 10vw;
+            bottom: 90px;*/
+            max-width: 100%;
+            height: auto;
+            position: relative;
+            bottom: 80px;
+
+
+        }
+        .service{
+            position: relative;
+            bottom: 100px;
+        }
+        .service>h1{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: darkslategray;
+            margin-top: 50px;
+        }
+
+        .services{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* border: black solid 5px;*/
+            width: 100%;
+        }
+        .services>div{
+            padding: 0 20px 0 20px;
+            height: 400px;
+            background-color: darkcyan;
+            border: 3px solid darkslategray;
+            margin: 10px 10px 10px 10px;
+            border-radius: 8%;
+            align-items: center;
+            justify-content: center;
+            left: 0;
+            right: 0;
+
+        }
+        .services>div>h1{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+        }
+        .services>div>p{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: white;
+            margin: 10px;
+        }
+
+        .awards{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            /*border: black solid 5px;*/
+            width: 100%;
+            margin-right: 200px;
+
+        }
+        .awards>div{
+            height: fit-content;
+            width: fit-content;
+            margin: 10px 10px 10px 10px;
+            align-items: center;
+            justify-content: center;
+            left: 0;
+            right: 0;
+        }
+        .awards>div:nth-child(2){
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            left: 0;
+            right: 0;
+            font-size: 20px;
+            color:darkcyan;
+            margin: 0 60px 0 0;
+            font-weight: bold;
+        }
+        .awards>div:first-child{
+            height: fit-content;
+            width: fit-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .award-section>h1{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: darkslategray;
+            margin-left: 500px;
+            margin-bottom: 50px;
+        }
+
+        .connect{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            /*border: black solid 5px;*/
+            width: 100%;
+            height: 400px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .connect div{
+            height: fit-content;
+            width: fit-content;
+            margin: 10px 10px 10px 10px;
+            align-items: center;
+            justify-content: center;
+            left: 0;
+            right: 0;
+        }
+
+        .left-connect>h1{
+            font-size: 40px;
+            font-weight: bold;
+            color: darkslategray;
+            margin-left: 50px;
+
+        }
+
+        .left-connect>span:first-child{
+            bottom: 300px;
+        }
+        .email-icon{
+            position: relative;
+            left: 50px;
+            bottom: 20px;
+        }
+        .email{
+
+            margin-left: 80px;
+            margin-top: -45px;
+            top: 200px;
+            bottom: 40px;
+            font-size: 18px;
+            color: darkcyan;
+
+        }
+        .phone-icon{
+            position: relative;
+            left: 50px;
+            bottom: 20px;
+            margin-top: 5px;
+        }
+        .phone{
+            margin-left: 80px;
+            margin-top: -45px;
+            top: 200px;
+            bottom: 40px;
+            font-size: 18px;
+            color: darkcyan;
+        }
+        .social-icons{
+            position: relative;
+            left: 50px;
+            bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .social-icons>img{
+            margin-right: 5px;
+            margin-top: 10px;
+            width: 35px;
+        }
+
+        .cv-button{
+            position: relative;
+            left: 50px;
+            width: 150px;
+            height: 40px;
+            background-color: darkslategray;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contact-inputs{
+            align-items: center;
+            justify-content: center;
+            height: fit-content;
+            position: relative;
+            top: 40px;
+            width: 500px;
+
+        }
+        .contact-inputs>.text-inputs{
+            width: 45vw;
+            position: relative;
+            height: 40px;
+            margin-bottom: 5px;
+            border: 2px solid darkslategray;
+            background-color: rgba(0,139,139,0.4);
+            color: black;
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+        .contact-inputs>input::placeholder {
+            color: darkslategray; /* Change this to your desired color */
+        }
+        .contact-inputs>textarea{
+            width: 45vw;
+            position: relative;
+            height: 100px;
+            margin-bottom: 5px;
+            border: 2px solid darkslategray;
+            background-color: rgba(0,139,139,0.4);
+            color: black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .contact-inputs>textarea::placeholder{
+            color: darkslategray;
+        }
+        .submit-button{position: relative;
+            width: 45vw;
+            height: 40px;
+            margin-bottom: 5px;
+            color: white;
+            font-weight: bold;
+            border: 2px solid darkslategray;
+            background-color: rgba(0,139,139,1);
+            border-radius: 10px;
+            padding: 10px;
+
+
+        }
+
+        .copyright{
+            position: relative;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+
+
+
+
+
+        @media all and (max-width: 750px) {
+            #bars {
+                display: block;
+                right: 20px;
+            }
+
+            #navigation {
+                display: none;
+            }
+
+            #logo{
+                left: 0;
+                right: 0;
+            }
+
+            .hero{
+                grid-template-columns: repeat(1,1fr);
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                padding: 10px;
+
+            }
+
+            .hero-left{
+                margin: auto;
+                text-align: center;
+            }
+            .hero-right>img{
+                /*width: 500px;
+                height: auto;
+                position: relative;
+                left: 10vw;
+                bottom: 90px;*/
+                max-width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 40px;
+
+
+            }
+
+            /*.hero-left>button{
+                left: 50%;
+                transform: translateX(-50%);
+            }*/
+            .connect{
+                grid-template-columns: repeat(1,1fr);
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+                height: 750px;
+
+
+            }
+            .contact-inputs{
+                /*grid-column: 1/2;
+                grid-row: 1/2;*/
+                top: -100px;
+            }
+            .submit-button{
+                width: 97vw
+            }
+            .contact-inputs>textarea{
+                width: 97vw;
+            }
+            .contact-inputs>.text-inputs{
+                width: 97vw;
+            }
+            #left-connect{
+                margin-left: -40px;
+
+            }
+
+
+
+        }
+
+
+        @media all and (max-width: 1000px) {
+            .services {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media all and (max-width: 500px) {
+            .services {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media all and (max-width: 1200px) {
+            .awards {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .award-section>h1{
+                margin: auto;
+                margin-bottom: 20px;
+            }
+            .awards>div:nth-child(2){
+                margin: 20px 20px 20px 20px;
+            }
+
+        }
+        @media all and (max-width: 600px) {
+            .awards>div:first-child{
+                width: 350px;
+                height: 200px;
+            }
+        }
+        @media all and (max-width:400px) {
+            .awards>div:first-child{
+                width: 300px;
+                height: 180px;
+            }
+        }
+
+    </style>
 </head>
 <body>
-<!--Header-->
-<header class="header">
-    <a href="#" class="logo"><b><span>V</span>inod <span>N</span>iloshana</b></a>
-    <i id="bars" class="fa-solid fa-bars-staggered" style="color: #7cf03d;"></i>
+<header id="header">
+    <img src="assets/png/ijse@1x.png" alt="IJSE" title="IJSE" width="150px" id="logo">
+    <i id="bars" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+    <nav id="navigation">
 
-    <nav class="navbar">
-        <!--Navigation-->
-        <a href="#" class="active">Home</a>
-        <a href="#about" >About</a>
-        <a href="#services">Services</a>
-        <a href="#tools">Skills</a>
-        <a href="#work">My Work</a>
-        <a href="#contact">Connect</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Career</a>
+        <a href="#">Contact</a>
+
     </nav>
 </header>
 
-<br><br><br><br><br>
-
-<!--Hero Section-->
-
 <section class="hero">
-
     <div class="hero-left">
         <!--Left side of Hero Section-->
-        <span class="hi-line"><img id="hand-gif" src="assets/icons/wired-outline-2716-logo-clubhouse-hover-pinch.gif" width="40" alt="Hi">
-           <b class="welcome">Hi There! I’m</b></span>
+        <b>Hi There! I’m</b>
         <h1>Vinod Niloshana</h1>
-        <b>And I’m <span>Full-Stack Developer</span></b>
+        <b>And I’m Full-Stack Developer </b>
         <p>Creating seamless experiences from frontend to backend.<br> Keep scrolling to see my work in action.</p>
 
-        <span class="sm-icons">
-            <a href="https://www.linkedin.com/in/vinod-niloshana-09678731a" target="_blank">
-            <img src="assets/social%20Media%20Icons/317725_linkedin_social_icon%20(1).png" alt="Linkedin" width="25" title="Linkedin">
-            </a>
-            <a href="https://github.com/Vinod663" target="_blank">
-            <img src="assets/social%20Media%20Icons/4747499_github_icon.png" alt="Github" width="25" title="Github">
-            </a>
-            <a href="https://www.instagram.com/nfvinod?igsh=MWsxajNvZ3B5ZnkyZQ==" target="_blank">
-            <img src="assets/social%20Media%20Icons/5282544_camera_instagram_social%20media_social%20network_instagram%20logo_icon.png" alt="Instagram" width="25" title="Instagram">
-            </a>
-            <a href="https://www.facebook.com/share/19p415RGLn/" target="_blank">
-            <img src="assets/social%20Media%20Icons/317727_facebook_social%20media_social_icon%20(1).png" alt="Facebook" width="25" title="Facebook">
-            </a>
-
-        </span><br><br>
-        <button ><b>Hire me</b></button>
+        <button ><b>Explore</b></button>
     </div>
-
     <div class="hero-right">
-        <!--Right side of hero section-->
-        <!--<img src="assets/media/clubHouse.svg" alt="Hero Section Animation">-->
-        <dotlottie-player src="assets/animation/Animation.lottie" background="transparent" speed="1" style="width: 500px;" loop autoplay></dotlottie-player>
+        <img src="assets/SVG/clubHouse.svg" alt="Club House" title="Club House">
     </div>
 </section>
 
-<!--About me-->
-
-<section id="about">
-    <h2>About <span>me,</span></h2>
-    <div class="about-section">
-
-        <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <!--Left side of About section-->
-                    <img src="assets/gallery/IMG_profile%20squre.png" alt="Profile picture" width="300" id="profile-picture">
-                </div>
-            </div>
+<section class="service">
+    <h1>Services</h1>
+    <section class="services">
+        <div>
+            <h1>Web Design</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda commodi dolores eum excepturi impedit, in, odit quis quod repellendus sapiente soluta tempora temporibus. Ad eos praesentium sed vel vero.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda commodi dolores eum excepturi impedit, in, odit quis quod repellendus sapiente soluta tempora temporibus. Ad eos praesentium sed vel vero.
+            </p>
         </div>
 
         <div>
-            <!--Right side of About section-->
-            <p>
-                Hi, I’m Vinod Niloshana Fernando, a dedicated software
-                engineering student at IJSE.I blend my love for technology
-                with creativity, thanks to my background in English
-                Language and Literature.My skills in software
-                development and graphic design help me solve problems
-                and build exciting digital experiences.I’m always eager to
-                learn, work on innovative projects, and create solutions
-                that make a difference.
-
-            </p><br>
-        </div>
-    </div>
-
-</section>
-
-<!--My Services-->
-<section id="services">
-    <h2>My Services</h2>
-    <div>
-        <!--Web Design(Left side)-->
-        <span>
-           <img src="assets/icons/5355692_code_coding_development_programming_web_icon%20(1).png" alt="" width="50"><br>
-       </span>
-        <h5>Web Design</h5>
-        <pre>
-           Creating stunning,
-           responsive websites that
-           adapt to any screen size,
-           combining creativity
-           and functionality for
-           online success.
-       </pre>
-    </div>
-    <div>
-        <!--UI/UX Design(Middle)-->
-        <span>
-           <img src="assets/icons/352576_color%20palette_paint_icon.png" alt="" width="50"><br>
-       </span>
-        <h6>UI/UX Design</h6>
-        <pre>
-            Designing attractive,
-            easy-to-use interfaces
-            that create great user
-            experiences for apps
-            and websites, ensuring
-            satisfaction and
-            simplicity.
-       </pre>
-    </div>
-    <div>
-        <!--Application & Software Development(Right side)-->
-        <span>
-           <img src="assets/icons/1009241_code_coding_programming_seo_network_icon.png" alt="" width="50"><br>
-       </span>
-        <h5>Application & Software Development</h5>
-        <pre>
-            Developing powerful
-            apps and software to
-            simplify tasks, solve
-            problems, and bring
-            innovative ideas to life.
-       </pre>
-    </div>
-    <button><b>Download CV</b></button><br><br>
-</section>
-
-<!--Achievements-->
-<section>
-    <h2>Achievements</h2>
-</section>
-
-<div>
-    <img src="assets/achievements/DOC-20250115-WA0003%5B1%5D.jpg" alt="" width="250"><br>
-    <pre>
-Won first place for a professional software project in
-my 1st semester at IJSE, showcasing innovation and
-problem-solving skills.
-</pre><br><br>
-</div>
-
-<div>
-    <img src="assets/achievements/DOC-20250115-WA0001%5B1%5D.jpg" alt="" width="250"><br>
-    <pre>
-award and certificate for excelling in the final project
-of 1st semester.
-</pre><br><br>
-</div>
-
-<div>
-    <img src="assets/achievements/DOC-20250115-WA0004%5B1%5D.jpg" alt="" width="250"><br>
-    <pre>
-Successfully completed a diploma at Aquinas, gaining
-advanced skills in English communication, writing, and
-critical analysis.
-</pre><br><br>
-</div>
-
-<div>
-    <img src="assets/achievements/DOC-20241210-WA0001%5B1%5D.png" alt="" width="250"><br>
-    <pre>
-Proudly held the diploma scroll, dressed in a
-graduation cloak, and celebrated the completion of
-English and Literature studies.
-</pre><br><br>
-</div>
-
-<div>
-    <img src="assets/achievements/FB_IMG_1736934857840%5B1%5D.jpg" alt="" width="250"><br>
-    <pre>
-Received a certificate from a respected official,
-marking an achievement in English and computer
-proficiency with great honor.
-</pre><br><br>
-</div>
-
-<!--Tools and Technologies-->
-<section id="tools">
-    <h2>Tools & Technologies</h2>
-    <span>
-        <img src="assets/tools/4691382_java_icon.png" alt="Java" width="40" title="Java">Java
-        <img src="assets/tools/9035061_logo_javascript_icon.png" alt="Javascript" width="40" title="Javascript">Javascript
-        <img src="assets/tools/7422531_css3_css_file_development_icon.png" alt="CSS" width="40" title="CSS">CSS
-        <img src="assets/tools/4691213_python_icon.png" alt="Python" width="40" title="Python">Python
-        <img src="assets/tools/367627_html_html5_icon.png" alt="HTML" width="40" title="HTML">HTML<br>
-
-        <img src="assets/tools/8134634_logo_figma_icon.png" alt="Figma" width="40" title="Figma">Figma
-        <img src="assets/tools/11401189_canva_graphic_design_icon%20(2).png" alt="Canva" width="40" title="Canva">Canva
-        <img src="assets/tools/1298714_photoshop_ps_psd_adobe_graphic_icon.png" alt="Photoshop" width="40" title="Photoshop">Photoshop
-        <img src="assets/tools/8666266_git_alt_icon.png" alt="Git" width="40" title="Git">Git
-        <img src="assets/tools/4691292_react%20native_react_icon.png" alt="React" width="40" title="React">React
-
-    </span><br><br>
-</section>
-
-<!--Education-->
-<section>
-    <h2>Education</h2>
-    <span>
-        <b>2024</b><br>
-        <img src="assets/education/7830754_people_man_graduate_icon%20(1).png" alt="" width="20" title="">Graduate Diploma in
-        Software Engineering(GDSE)<br>
-
-        <b>2022</b><br>
-        <img src="assets/education/6585292_certificate_degree_diploma_education_icon.png" alt="" width="20" title="">GCE Advanced Level
-        Examination<br>
-
-        <b>2020</b><br>
-        <img src="assets/education/9020487_diploma_certificate_degree_education_icon%20(1).png" alt="" width="20" title="">Diploma in English
-        Language and Literature<br>
-
-        <b>2020</b><br>
-        <img src="assets/education/7263828_certificate_diploma_achievement_graduation_certification_icon.png" alt="" width="20" title="">Certificate course in
-        English and Computer<br>
-
-        <b>2019</b><br>
-        <img src="assets/education/11783879_certificate_diploma_certification_quality_medal_icon.png" alt="" width="20" title="">GCE Ordinary Level
-        Examination<br>
-    </span><br><br>
-</section>
-
-<!--My Work-->
-<section id="work">
-
-    <div>
-        <!--Intro-->
-        <h2>My Work</h2>
-        <pre>
-Welcome to the My Work section! This is where I share the projects and assignments
- I’ve completed, each reflecting creativity, problem-solving, and technical skills.
-          Explore how I tackle challenges and turn ideas into reality!
-        </pre><br>
-    </div>
-
-    <div>
-        <!--Projects-->
-
-        <div>
-            <h2>Projects</h2>
-            <!--Project 01-->
-            <img src="assets/project%20photos/ECOSORT-Presentation%20(1).jpg" alt="" width="200"><br>
-            <h5>Waste Management and
-                Recycling Software</h5>
-            <pre>
-Developed software to help manage waste
-collection and recycling, improving efficiency and
-sustainability in communities.</pre>
-            <button>Explore</button><br><br><br>
+            <h1>UI/UX Design</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda commodi dolores eum excepturi impedit, in, odit quis quod repellendus sapiente soluta tempora temporibus. Ad eos praesentium sed vel vero.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda commodi dolores eum excepturi impedit, in, odit quis quod repellendus sapiente soluta tempora temporibus. Ad eos praesentium sed vel vero.
+            </p>
         </div>
 
         <div>
-            <!--Project 02-->
-            <img src="assets/project%20photos/Real-Time-Inventory-Management-01.jpg" alt="" width="200"><br>
-            <h5>Real-Time Inventory
-                Management System</h5>
-            <pre>
-Built an inventory system that tracks stock in real
-time, ensuring accurate and efficient stock
-management.</pre>
-            <button>Explore</button><br><br><br>
+            <h1>Application & Software Development</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda commodi dolores eum excepturi impedit, in, odit quis quod repellendus sapiente soluta tempora temporibus. Ad eos praesentium sed vel vero.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda commodi dolores eum excepturi impedit, in, odit quis quod repellendus sapiente soluta tempora temporibus. Ad eos praesentium sed vel vero.
+            </p>
         </div>
 
         <div>
-            <!--Project 03-->
-            <img src="assets/project%20photos/2.png" alt="" width="200"><br>
-            <h5>Hospital Management
-                System</h5>
-            <pre>
-Created a system to manage patient records,
-appointments, and billing, improving hospital
-operations and patient care.</pre>
-            <button>Explore</button><br><br><br>
+            <h1>Graphic Design</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda commodi dolores eum excepturi impedit, in, odit quis quod repellendus sapiente soluta tempora temporibus. Ad eos praesentium sed vel vero.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda commodi dolores eum excepturi impedit, in, odit quis quod repellendus sapiente soluta tempora temporibus. Ad eos praesentium sed vel vero.
+            </p>
+        </div>
+    </section>
+</section>
+
+<section class="award-section">
+    <h1>Awards</h1>
+    <div class="awards">
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/okOFF7vQDj8?si=OSNdLJ4Keb_itdWp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ea quas voluptatem! Adipisci asperiores dolor ea eligendi eos harum, id illo libero molestias, mollitia non nulla perspiciatis placeat veniam veritatis?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ea quas voluptatem! Adipisci asperiores dolor ea eligendi eos harum, id illo libero molestias, mollitia non nulla perspiciatis placeat veniam veritatis?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ea quas voluptatem! Adipisci asperiores dolor ea eligendi eos harum, id illo libero molestias, mollitia non nulla perspiciatis placeat veniam veritatis?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ea quas voluptatem! Adipisci asperiores dolor ea eligendi eos harum, id illo libero molestias, mollitia non nulla perspiciatis placeat veniam veritatis?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ea quas voluptatem! Adipisci asperiores dolor ea eligendi eos harum, id illo libero molestias, mollitia non nulla perspiciatis placeat veniam veritatis?
+            </p>
         </div>
 
     </div>
-
-
-    <div>
-        <!--Assignments-->
-        <h2>Assignments</h2>
-        <a href=""><b>Assignment 01</b></a><br>
-        <a href=""><b>Assignment 02</b></a><br>
-        <a href=""><b>Assignment 03</b></a><br>
-        <a href=""><b>Assignment 04</b></a><br>
-        <a href=""><b>Assignment 05</b></a><br><br><br>
-
-    </div>
-
 </section>
 
-<!--Footer-->
-<footer id="contact">
-    <div>
-        <!--Left side of footer-->
-        <h2>Connect me</h2>
-        <span><img src="assets/icons/7830825_send_email_icon.png" alt="" width="20">
-        vinodfernando048@gmail.com</span><br>
-        <span><img src="assets/icons/3669395_call_ic_icon.png" alt="" width="20">
-        +94 77 819 3985</span><br>
-
-        <span>
-            <a href="https://www.linkedin.com/in/vinod-niloshana-09678731a" target="_blank">
-            <img src="assets/social%20Media%20Icons/317725_linkedin_social_icon%20(1).png" alt="Linkedin" width="25" title="Linkedin">
-            </a>
-            <a href="https://github.com/Vinod663" target="_blank">
-            <img src="assets/social%20Media%20Icons/4747499_github_icon.png" alt="Github" width="25" title="Github">
-            </a>
-            <a href="https://www.instagram.com/nfvinod?igsh=MWsxajNvZ3B5ZnkyZQ==" target="_blank">
-            <img src="assets/social%20Media%20Icons/5282544_camera_instagram_social%20media_social%20network_instagram%20logo_icon.png" alt="Instagram" width="25" title="Instagram">
-            </a>
-            <a href="https://www.facebook.com/share/19p415RGLn/" target="_blank">
-            <img src="assets/social%20Media%20Icons/317727_facebook_social%20media_social_icon%20(1).png" alt="Facebook" width="25" title="Facebook">
-            </a>
-
-        </span><br><br>
-        <button ><b>Download CV</b></button><br><br><br>
+<footer class="connect">
+    <div class="left-connect" id="left-connect">
+        <h1>Connect me</h1>
+        <span ><img src="assets/Icons/icons8-email-50.png" alt="Email" title="Email" width="20px" class="email-icon" > </span><p class="email">vinodfernando048@gmail.com</p><br>
+        <span><img src="assets/Icons/icons8-call-50.png" alt="call" title="call" width="20px" class="phone-icon"> </span><p class="phone">+94 77 819 3985</p><br>
+        <span class="social-icons">
+            <img src="assets/Icons/317725_linkedin_social_icon%20(1).png" alt="LinkedIn" title="LinkedIn" width="40px">
+            <img src="assets/Icons/4747499_github_icon.png" alt="GitHub" title="GitHub" width="40px">
+            <img src="assets/Icons/5282544_camera_instagram_social%20media_social%20network_instagram%20logo_icon.png" alt="instar" title="instar" width="40px">
+            <img src="assets/Icons/317727_facebook_social%20media_social_icon%20(1).png" alt="Facebook" title="Facebook" width="40px">
+        </span><br>
+        <input type="button" value="Download CV" class="cv-button">
 
     </div>
 
-    <div>
-        <!--Right side of Footer-->
-        <form>
-            <div>
-                <input type="text"
-                       id="name"
-                       placeholder="Your Name"
-                       name="name"
-                ><br>
-            </div>
-
-            <div>
-                <input type="email"
-                       id="email"
-                       placeholder="Your Email"
-                       name="email"
-                ><br>
-            </div>
-
-            <div>
-                <input type="text"
-                       id="subject"
-                       placeholder="Your Subject"
-                       name="subject"
-                ><br>
-            </div>
-
-            <div>
-                <textarea type="text"
-                          id="message"
-                          placeholder="Your Message"
-                          rows="5"
-                          cols="40"
-                          name="message"
-                ></textarea><br>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-
-    </div><br>
-
-    <div>
-        <pre>
-Copyright © 2025 Vinod Niloshana
-        </pre>
+    <div class="contact-inputs">
+        <input type="text" placeholder="Your Name" class="text-inputs"><br>
+        <input type="email" placeholder="Your Email"class="text-inputs"><br>
+        <input type="text" placeholder="Subject"class="text-inputs"><br>
+        <textarea
+                id="Message"
+                placeholder="Message"
+                rows="7"
+                cols="50"
+                name="Message"
+        ></textarea><br>
+        <input type="submit" placeholder="Submit" class="submit-button">
     </div>
 </footer>
+<section class="copyright">
+    <p><strong> Copyright © 2025 Vinod Niloshana</strong></p>
+</section>
+
+
 
 
 <script src="assets/lib/fontawesome/js/all.min.js"></script>
-<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </body>
 </html>
