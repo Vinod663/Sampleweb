@@ -100,6 +100,7 @@ nav a{
     justify-content: space-between;
     align-items: center;
     margin-top: -30px;
+    overflow-y: hidden;
 }
 
 
@@ -117,6 +118,7 @@ nav a{
     font-size: 50px;
     font-weight: bold;
     bottom: 50px;
+    overflow-y: hidden;
 }
 .hero-left>b{
     position: relative;
@@ -132,6 +134,7 @@ nav a{
     bottom: 80px;
     font-size: 17px;
     font-weight: bold;
+    overflow-y: hidden;
 }
 .sm-icons{
     position: relative;
@@ -171,6 +174,7 @@ nav a{
     margin-bottom: 20px;
     /*text-align: center;*/
     margin-left: 560px;
+    overflow-y: hidden;
     /*padding: 10px 0;*/
 }
 #about>h2>span{
