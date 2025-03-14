@@ -106,12 +106,18 @@ nav a{
 
 #hand-gif{
     width: 68px;
+    top: 0;
+    left: 0;
+    margin: auto;
 }
 .welcome{
+    display: inline;
     position: relative;
     font-size: 35px;
     font-weight: bold;
     bottom: 10px;
+    overflow-y: hidden;
+
 }
 .hero-left>h1{
     position: relative;
@@ -129,7 +135,7 @@ nav a{
 .hero-left>b>span{
     color: #7CF03D;
 }
-.hero-left>p{
+.hero-des{
     position: relative;
     bottom: 80px;
     font-size: 17px;
@@ -477,7 +483,7 @@ nav a{
         bottom: 70px;
         font-size: 25px;
     }
-    .hero-left>p{
+    .hero-des{
         bottom: 70px;
         font-size: 12px;
     }
