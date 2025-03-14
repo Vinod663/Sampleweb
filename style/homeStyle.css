@@ -108,15 +108,15 @@ nav a{
     width: 68px;
     top: 0;
     left: 0;
+    margin-bottom: 35px;
 
 }
 .welcome{
-    /*display: inline;*/
+    display: inline;
     position: relative;
     font-size: 35px;
     font-weight: bold;
-    bottom: 40px;
-    left: 70px;
+    bottom: 45px;
     overflow-y: hidden;
 
 
@@ -125,7 +125,7 @@ nav a{
     position: relative;
     font-size: 50px;
     font-weight: bold;
-    bottom: 70px;
+    bottom: 75px;
     overflow-y: hidden;
 }
 .hero-left>b{
