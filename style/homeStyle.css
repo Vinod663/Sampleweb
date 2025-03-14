@@ -159,6 +159,10 @@ nav a{
     border-radius: 40in;
     cursor: url(../assets/media/arrowClick.7219a884818048edacbe.svg) 15 15, move !important;
 }
+.hero-right>dotlottie-player{
+    position: relative;
+    width: 500px;
+}
 /*#about{
     width: 100%;
     !*padding: 10px 4%;*!
@@ -503,6 +507,12 @@ nav a{
         position: relative;
         bottom: 80px;
     }
+    .hero-right>dotlottie-player{
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: 350px;
+    }
 }
 
 @media all and (max-width: 500px){
@@ -548,6 +558,12 @@ nav a{
 
 }
 
+@media all and (max-width: 1000px) and (min-width: 769px) {
+    .hero-right>dotlottie-player {
+        width: 350px;
+    }
+}
+
 @media all and (max-width: 1000px) {
     .about-section{
         flex-direction: column;
@@ -572,6 +588,7 @@ nav a{
     #about>h2{
         text-align: center;
         margin-left: 0;
+        margin-top: 30px;
         margin-bottom: 50px;
     }
     .about-section>div:first-child{
@@ -581,6 +598,7 @@ nav a{
     #services>h2{
         margin-top: 20px;
     }
+
 
 }
 
