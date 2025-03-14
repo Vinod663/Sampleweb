@@ -119,20 +119,21 @@ nav a{
     overflow-y: hidden;
 
 }
-.hero-left>h1{
+.name{
     position: relative;
     font-size: 50px;
     font-weight: bold;
     bottom: 50px;
     overflow-y: hidden;
 }
-.hero-left>b{
+.position{
     position: relative;
     bottom: 90px;
     font-size: 35px;
     font-weight: bold;
+    overflow-y: hidden;
 }
-.hero-left>b>span{
+.position>span{
     color: #7CF03D;
 }
 .hero-des{
@@ -146,6 +147,7 @@ nav a{
     position: relative;
     bottom: 60px;
     left: 10px;
+    overflow-y: hidden;
 
 }
 .sm-icons img{
