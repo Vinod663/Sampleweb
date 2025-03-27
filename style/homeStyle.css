@@ -838,6 +838,7 @@ nav a{
     font-size: 2rem;
     cursor: pointer;
     user-select: none;
+    overflow-y: hidden;
     cursor: url(../assets/media/arrowClick.7219a884818048edacbe.svg) 15 15, move !important;
 }
 
