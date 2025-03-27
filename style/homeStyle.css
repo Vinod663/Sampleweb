@@ -878,26 +878,6 @@ nav a{
     color: #7CF03D;
 }
 
-:root {
-    --primary-green: #7cf03d;
-    --dark-background: #121212;
-    --input-background: #1e1e1e;
-    --text-color: #ffffff;
-}
-
-/** {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--dark-background);
-    color: var(--text-color);
-    line-height: 1.6;
-}*/
-
 #contact {
     max-width: 1200px;
     margin: 0 auto;
